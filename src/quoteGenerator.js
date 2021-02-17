@@ -1,2 +1,6 @@
 
-let quoteArray = []
+let quoteArray = ""
+
+function quoteGenerator() {
+  return quoteArray;
+}

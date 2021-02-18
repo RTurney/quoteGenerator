@@ -3,7 +3,7 @@
 This is an application designed to randomly generate quotes.
 
 ## Instructions: 
-Simply open the html page from your file explorer or, run `<open index.HTML>` from your terminal. 
+Simply open the html page from your file explorer or, run `open index.HTML` from your terminal. 
 
 Press the `new quote` button to be randomly presented with a quote. 
 

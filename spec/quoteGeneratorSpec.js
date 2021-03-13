@@ -1,9 +1,26 @@
-describe('Quote generator', () => {
+const {quoteGenerator} = require('../src/quoteGenerator.js')
 
-  describe('quote generator', () =>{
+describe('Quote generator', () => {
+  let mockQuoteArray;
+
+  describe('standard quote generator', () =>{
+    beforeEach(() => {
+      mockQuoteArray = [
+        'I am a quote',
+        'I am a quote'
+      ];
+    });
 
     it('will return a string', () => {
-      expect(quoteGenerator()).toBeInstanceOf(String);
+      expect(quoteGenerator(mockQuoteArray)).toBeInstanceOf(String);
     });
+
+    it('will return a random quote', () => {
+      expect(quoteGenerator(mockQuoteArray)).toEqual('I am a quote');
+    });
+  });
+
+  describe('navbar', () => {
+    
   });
 });

@@ -10,10 +10,14 @@ let quoteArray = ["Spread love everywhere you go. Let no one ever come to you wi
 "Whoever is happy will make others happy too. ~ Anne Frank",
 "Do not go where the path may lead, go instead where there is no path and leave a trail. ~ Ralph Waldo Emerson"]
 
-function quoteGenerator() {
-  return quoteArray[Math.floor(Math.random()*quoteArray.length)];
+function quoteGenerator(quotesArray) {
+  return quotesArray[Math.floor(Math.random()*quotesArray.length)];
 }
 
 function quoteButton() {
-  document.getElementById("quote-display").innerHTML = quoteGenerator();
+  document.getElementById("quote-display").innerHTML = quoteGenerator(quoteArray);
+}
+
+module.exports = {
+  quoteGenerator
 }

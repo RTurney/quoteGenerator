@@ -8,4 +8,6 @@ body {
 
 #quote-display {
   padding: 200px;
+  border: solid;
+  background: white;
 }
